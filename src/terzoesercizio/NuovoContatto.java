@@ -28,4 +28,16 @@ public class NuovoContatto {
    System.out.println("Nessun contatto trovato con il numero: " + numero);
   }
  }
+ public void cercaNumero (String nome){
+  if (nuovicontatti.containsKey(nome)){
+   for(Map.Entry<String, String> entry : nuovicontatti.entrySet()){
+    if(entry.getKey().equals(nome)){
+     System.out.println(nome + " è registrato in rubrica. Il suo numero è "+ entry.getKey());
+     return;
+    }
+   }
+  }else{
+   System.out.println("Nessun numero per il nome ricercato.");
+  }
+ }
 }
