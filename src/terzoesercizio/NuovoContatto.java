@@ -40,4 +40,11 @@ public class NuovoContatto {
    System.out.println("Nessun numero per il nome ricercato.");
   }
  }
+ public void stampa(){
+  if(nuovicontatti.isEmpty()){
+   System.out.println("Non hai contatti registrati.");
+  }else{for(Map.Entry<String, String> entry : nuovicontatti.entrySet()){
+   System.out.println("Contatto in rubrica : nome - "+entry.getKey()+ " numero - "+entry.getValue());
+  }}
+ }
 }

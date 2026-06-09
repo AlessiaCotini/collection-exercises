@@ -12,8 +12,8 @@ public class EsercizioTre {
         rubrica.aggiungi("Ariel "," +39 3311564874");
         rubrica.elimina("Antonio");
         rubrica.cercaNome(" +39 3921564874");
-        //System.out.println( rubrica.get("Haru"));
-       // System.out.println(rubrica);
+        rubrica.cercaNumero("Haru");
+        rubrica.stampa();
     }
 
 }
